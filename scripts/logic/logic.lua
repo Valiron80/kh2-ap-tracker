@@ -69,10 +69,28 @@ function dif(level)
 end
 
 function toggle_overworldmap()
-    if Tracker:FindObjectForCode('opt_summon').CurrentStage == 1 then
-        Tracker:AddMaps("maps/overworld.json")
+    local summon = Tracker:FindObjectForCode('opt_summon')
+    local mapicon = Tracker:FindObjectForCode('opt_mapicon')
+
+    if not summon or not mapicon then
+        return
+    end
+
+    local has_summons = summon.CurrentStage == 1
+    local show_icons = mapicon.CurrentStage == 1
+
+    if has_summons then
+        if show_icons then
+            Tracker:AddMaps("maps/overworld_mapicon.json")
+        else
+            Tracker:AddMaps("maps/overworld.json")
+        end
     else
-        Tracker:AddMaps("maps/overworld_without_summons.json")
+        if show_icons then
+            Tracker:AddMaps("maps/overworld_without_summons_mapicon.json")
+        else
+            Tracker:AddMaps("maps/overworld_without_summons.json")
+        end
     end
 end
 

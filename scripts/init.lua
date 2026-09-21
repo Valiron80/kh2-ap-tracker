@@ -69,5 +69,8 @@ ScriptHost:LoadScript("scripts/autotracking.lua")
 -- Watch for the changing of the Overworld Map Image used
 ScriptHost:AddWatchForCode("opt_summon", "opt_summon", toggle_overworldmap)
 
+-- Watch for the changing of the Overworld Map Image used
+ScriptHost:AddWatchForCode("opt_mapicon", "opt_mapicon", toggle_overworldmap)
+
 -- Watch for Hint Tracking
 ScriptHost:AddWatchForCode("hint_tracking", "hint_tracking", toggleHints)
