@@ -1,6 +1,14 @@
 {
   "versions": [
     {
+      "package_version": "0.4.3",
+      "download_url": "https://github.com/Valiron80/kh2-ap-tracker/archive/refs/tags/0.4.3.zip",
+      "sha256": "b24029ddeccc51d664ceb6405d9f7edbd6a117f14a22da740fe8c00921e677ab",
+      "changelog": [
+        "Check release notes"
+      ]
+    },
+    {
       "package_version": "0.4.2",
       "download_url": "https://github.com/palex00/kh2-ap-tracker/archive/refs/tags/0.4.2.zip",
       "sha256": "fd03a1a918bb25f992d60fe3655c09860a58f0bb0efcf84814d6e61511a17351",
