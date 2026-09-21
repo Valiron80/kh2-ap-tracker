@@ -34,7 +34,8 @@
                                 "opt_dgstats",
                                 "opt_corskip",
 								"opt_atlantica",
-								"opt_summon"
+								"opt_summon",
+                                "opt_mapicon"
                             ],
                             [
                                 "opt_hide_locations",

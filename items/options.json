@@ -257,6 +257,27 @@
         ]
     },
     {
+        "name": "Show Map Icons",
+        "type": "progressive",
+        "loop": true,
+        "initial_stage_idx": 1,
+        "allow_disabled": false,
+        "stages": [
+            {
+                "name": "Show Map Icons: No",
+                "img": "images/items/Settings/IdentityDisk.png",
+                "img_mods": "@disabled",
+                "codes": "opt_mapicon,opt_mapicon_no"
+            },
+            {
+                "name": "Show Map Icons: Yes",
+                "img": "images/items/Settings/IdentityDisk.png",
+                "codes": "opt_mapicon,opt_mapicon_yes",
+                "inherit_codes": false
+            }
+        ]
+    },
+    {
         "name": "Atlantica",
         "type": "progressive",
         "loop": true,
